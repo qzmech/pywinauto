@@ -64,7 +64,7 @@ install:
   #- ps: "ls \"C:/\""
   #- ECHO "Notepad location "
   #- ps: "ls C:\\Windows\\System32\\notepad.exe"
-
+  - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" x64 8.1
   # install the appropriate Miniconda (Py2/Py3, 32/64 bit),
   # as well as pywin32, pillow and coverage
   - "powershell ./ci/install.ps1"
