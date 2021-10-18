@@ -8,6 +8,8 @@
 # fetch repository as a zip archive
 shallow_clone: true                 # default is "false"
 
+image: Visual Studio 2019
+
 environment:
 
   matrix:
