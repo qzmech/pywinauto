@@ -1040,6 +1040,7 @@ class ListViewWrapperTests(unittest.TestCase):
         item = listbox.get_item(3)
         self.assertEqual(item.texts(), self.listbox_texts[3])
 
+        self.listbox_datagrid_tab.dump_tree()
         item = listbox.get_item(u"TextItem 8")
         self.assertEqual(item.texts(), self.listbox_texts[9])
 
