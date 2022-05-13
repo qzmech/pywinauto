@@ -5,6 +5,8 @@
 # the yaml online parser: http://yaml-online-parser.appspot.com/
 #
 
+image: Visual Studio 2022
+
 # fetch repository as a zip archive
 shallow_clone: false                 # default is "false"
 
@@ -84,6 +86,8 @@ build: false  # Not a C# project, build stuff at the test step instead.
 
 test_script:
   # run the tests
+  - ver
+  - python --version
   - "powershell ./ci/runTestsuite.ps1"
 
 
