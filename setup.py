@@ -57,7 +57,7 @@ sys.path.append(setup_path())
 #        shutil.move(setup_path("website"), setup_path("docs"))
 
 if sys.platform == 'win32':
-    install_requires = ['six', 'comtypes']
+    install_requires = ['six', 'comtypes', 'injectdll']
     try:
         import win32api # check if it was already installed manually
     except ImportError:
