@@ -51,8 +51,8 @@ from pywinauto import mouse  # noqa: E402
 
 import pywinauto.controls.wpf_controls as wpf_ctls
 from pywinauto.controls.wpfwrapper import WPFWrapper
-from pywinauto.windows.injected.api import InjectedBaseError
-from pywinauto.windows.injected.channel import InjectedBrokenPipeError
+from injectdll.api import InjectedBaseError
+from injectdll.channel import InjectedBrokenPipeError
 
 wpf_samples_folder = os.path.join(
     os.path.dirname(__file__), r"..\..\apps\WPF_samples")

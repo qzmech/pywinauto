@@ -40,7 +40,7 @@ import six
 from .. import backend
 from .win_base_wrapper import WinBaseWrapper
 from ..base_wrapper import BaseMeta
-from ..windows.injected.api import ConnectionManager
+from injectdll.api import ConnectionManager
 from ..windows.wpf_element_info import WPFElementInfo
 
 
